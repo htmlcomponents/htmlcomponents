@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-hidden-until-imports-imported>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guide</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+    <script>
+      (function setColorSchemeFromLocalStorage() {
+        const colorScheme = localStorage.getItem("colorscheme");
+        if (colorScheme) {
+          document.documentElement.setAttribute(
+            "data-color-scheme",
+            colorScheme
+          );
+        }
+      })();
+    </script>
+  </head>
+
+  <body>
+    <script type="module" src="/main.js"></script>
+    <import-html source="/imports/home-header.html"></import-html>
+    <h1>Guide</h1>
+    <section-container>
+      <template shadowrootmode="open">
+        <link rel="stylesheet" href="/assets/components.css" />
+        <section>
+          <slot></slot>
+        </section>
+      </template>
+      <h2>Guide</h2>
+    </section-container>
+
+    <section-container data-color-scheme="custom">
+      <template shadowrootmode="open">
+        <link rel="stylesheet" href="/assets/components.css" />
+        <section>
+          <slot></slot>
+        </section>
+      </template>
+      <h2>Guide</h2>
+    </section-container>
+    <import-html
+      source="/imports/home-footer.html"
+      data-visible-when-imported
+    ></import-html>
+  </body>
+</html>
