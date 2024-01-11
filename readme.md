@@ -5,7 +5,7 @@ Create a project with HTML components.
 Pre-alpha!
 
 ```bash
-npx htmlcomponents
+npx @htmlcomponents/create
 ```
 
 Installs Vite and postCSS.

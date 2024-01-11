@@ -1,5 +1,5 @@
 {
-  "name": "htmlcomponents",
+  "name": "@htmlcomponents/create",
   "version": "0.0.1",
   "description": "Create a project with HTML components",
   "main": "index.js",
