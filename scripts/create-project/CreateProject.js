@@ -26,6 +26,7 @@ export default class CreateProject {
         },
       },
       postcss: { version: "^8.4.33" },
+      cssnano: { version: "^6.0.3" },
       "postcss-cli": {
         version: "^11.0.0",
         scripts: {
